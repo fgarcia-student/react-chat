@@ -16,7 +16,6 @@ class App extends Component {
 	}
 
 	handleSubmit(text) {
-		console.log(text);
 		let m = <Message content={text} />
 		this.setState((prevState,props) => {
 			messages : prevState.messages.push(m)

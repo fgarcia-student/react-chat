@@ -22,7 +22,9 @@ class InputMessage extends Component {
 		this.props.onSubmit(this.state.currentMsg);
 		this.setState({
 			currentMsg : ""
-		})
+		});
+		let msg = this.refs.msg;
+		msg.value = "";
 	}
 
 	render() {
